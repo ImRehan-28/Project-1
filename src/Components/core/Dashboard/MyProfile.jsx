@@ -28,7 +28,7 @@ const MyProfile = () => {
 
                 <div className='bg-yellow-200 px-2.5 py-1 rounded-md'>
                     <IconBtn text="Edit" onClick={() => { navigate("/dashboard/settings") }}>
-                        
+                        <VscSignOut />
                     </IconBtn>
                 </div>
             </div>
