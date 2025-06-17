@@ -21,7 +21,7 @@ const MyProfile = () => {
                         className='aspect-square w-[70px] rounded-full object-cover'
                     />
                     <div>
-                        <p>{user?.firstName + user?.lastName}</p>
+                        <p>{user?.firstName + " " + user?.lastName}</p>
                         <p>{user?.email}</p>
                     </div>
                 </div>
