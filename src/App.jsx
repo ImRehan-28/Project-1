@@ -17,7 +17,8 @@ import PrivateRoute from './Components/core/Auth/PrivateRoute'; // Import Privat
 function App() {
 
   return (
-    <div className='w-screen min-h-screen bg-richblack-900 flex flex-col font-inter'>
+    <div className='w-screen min-h-screen bg-richblack-900 flex flex-col font-inter
+'>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -38,7 +39,9 @@ function App() {
           </PrivateRoute>
           } >
           <Route path="/dashboard/my-profile" element={<MyProfile />} />
+          <Route path="dashboard/settings" element={<Settings/>}/>
         </Route>
+        <Route path="*" element={<Error />} />
       </Routes>
     </div>
   )

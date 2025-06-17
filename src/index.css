@@ -28,3 +28,32 @@ html,body{
   66% {background-size: 20% 100%,20% 100%,20% 10% }
   100%{background-size: 20% 100%,20% 100%,20% 100%}
 }
+
+/* In your index.css or a global.css file */
+::-webkit-scrollbar {
+  width: 1.5px;
+}
+
+::-webkit-scrollbar-track {
+  background:white;
+}
+
+::-webkit-scrollbar-thumb {
+  background:black;
+  border-radius: 100%;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:pink;
+}
+
+/* Optional: Dark Mode */
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-track {
+    background:#000814;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: white;
+  }
+}

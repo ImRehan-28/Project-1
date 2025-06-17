@@ -26,7 +26,7 @@ const MyProfile = () => {
                     </div>
                 </div>
 
-                <div className='bg-yellow-200 px-2.5 py-1 rounded-md'>
+                <div className='bg-yellow-200 px-2.5 py-1 rounded-md text-black font-medium'>
                     <IconBtn text="Edit" onClick={() => { navigate("/dashboard/settings") }}>
                         <VscSignOut />
                     </IconBtn>
@@ -40,7 +40,7 @@ const MyProfile = () => {
                     <p className='rounded-sm py-1'>{user?.additionalDetails?.about ?? "Write something about yourself"}</p>
                 </div>
 
-                <div className='bg-yellow-200 px-2.5 py-1 rounded-md'>
+                <div className='bg-yellow-200 px-2.5 py-1 rounded-md text-black'>
                     <IconBtn text="Edit" onClick={() => { navigate("/dashboard/settings") }}>
                         <VscSignOut />
                     </IconBtn>
@@ -68,20 +68,20 @@ const MyProfile = () => {
                         </div>
                         <div>
                             <p className='text-richblack-300'>Phone Number</p>
-                            <p>{user?.additionalDetails?.contactNumber}</p>
+                            <p>{user?.additionalDetails?.contactNumber ?? "Add Contact Number"}</p>
                         </div>
                         <div>
                             <p className='text-richblack-300'>Gender</p>
-                            <p>{user?.additionalDetails?.gender}</p>
+                            <p>{user?.additionalDetails?.gender ?? "Add Gender"}</p>
                         </div>
-                        
+
                         <div>
                             <p className='text-richblack-300'>Date of Birth</p>
                             <p>{user?.additionalDetails?.dateOfBirth ?? "Add Dateof Birth"}</p>
                         </div>
                     </div>
                 </div>
-                <div className='bg-yellow-200 px-2.5 py-1 rounded-md h-fit'>
+                <div className='bg-yellow-200 px-2.5 py-1 rounded-md h-fit text-black'>
                     <IconBtn text="Edit" onClick={() => { navigate("/dashboard/settings") }}>
                         <VscSignOut />
                     </IconBtn>
